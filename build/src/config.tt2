@@ -1,0 +1,18 @@
+[%-
+site = {
+	title = 'Amazon Machine Images (AMI) - Amazon Web Services (AWS)',
+	url => 'https://ami.nkn-it.de',
+	github = {
+		repo   => 'https://github.com/Cyclenerd/aws-ami',
+		issues => 'https://github.com/Cyclenerd/aws-ami/issues',
+	},
+	bootstrap = {
+		css  => 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css'
+		js   => 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js'
+	},
+	tabulator = {
+		css  => 'https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.6.1/css/tabulator_midnight.min.css'
+		js   => 'https://cdnjs.cloudflare.com/ajax/libs/tabulator/5.6.1/js/tabulator.min.js'
+	},
+};
+-%]

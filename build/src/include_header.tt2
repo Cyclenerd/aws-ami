@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<title>[% IF title %][% title %][% ELSE %][% site.title %][% END %]</title>
+[% IF url %]<link rel="canonical" href="[% site.url %][% url %]">[% END %]
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="[% site.bootstrap.css %]">
+<link rel="stylesheet" href="[% site.tabulator.css %]">
+<script src="[% site.tabulator.js %]"></script>
+</head>
+<body>
+<header>
+	<nav class="navbar bg-body-tertiary">
+		<div class="container-fluid">
+			<a class="navbar-brand mb-0 h1" href="/">
+				<span class="d-none d-lg-block">Amazon Web Services 💿 Amazon Machine Images (AMI)</span>
+				<span class="d-lg-none">AWS 💿 AMI</span>
+			</a>
+		</div>
+	</nav>
+</header>
+<div class="container-fluid">
+<main>

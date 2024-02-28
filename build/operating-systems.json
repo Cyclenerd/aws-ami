@@ -1,0 +1,481 @@
+[
+	{
+		"owner": "013907871322",
+		"name": "suse",
+		"description": "SUSE",
+		"versions": [
+			{
+				"filter": "suse-sles-15-sp5-v[0-9]*-hvm",
+				"name": "suse-sles-15-sp5",
+				"description": "SUSE Linux Enterprise Server 15 SP5"
+			}
+		]
+	},
+	{
+		"owner": "099720109477",
+		"name": "ubuntu",
+		"description": "Ubuntu",
+		"versions": [
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-bionic-18.04",
+				"name": "ubuntu-18-04",
+				"description": "Ubuntu 18.04 (Bionic)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-bionic-18.04",
+				"name": "ubuntu-18-04-minimal",
+				"description": "Ubuntu 18.04 (Bionic) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-focal-20.04",
+				"name": "ubuntu-20-04",
+				"description": "Ubuntu 20.04 (Focal)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-focal-20.04",
+				"name": "ubuntu-20-04-minimal",
+				"description": "Ubuntu 20.04 (Focal) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-impish-21.10",
+				"name": "ubuntu-21-10",
+				"description": "Ubuntu 21.10 (Impish)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-impish-21.10",
+				"name": "ubuntu-21-10-minimal",
+				"description": "Ubuntu 21.10 (Impish) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-jammy-22.04",
+				"name": "ubuntu-22-04",
+				"description": "Ubuntu 22.04 (Jammy)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04",
+				"name": "ubuntu-22-04-minimal",
+				"description": "Ubuntu 22.04 (Jammy) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-lunar-23.04",
+				"name": "ubuntu-22-10",
+				"description": "Ubuntu 22.10 (Kinetic)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-lunar-23.04",
+				"name": "ubuntu-22-10-minimal",
+				"description": "Ubuntu 22.10 (Kinetic) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-lunar-23.04",
+				"name": "ubuntu-23-04",
+				"description": "Ubuntu 23.04 (Lunar)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-lunar-23.04",
+				"name": "ubuntu-23-04-minimal",
+				"description": "Ubuntu 23.04 (Lunar) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd/ubuntu-mantic-23.10",
+				"name": "ubuntu-23-10",
+				"description": "Ubuntu 23.10 (Mantic)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-mantic-23.10",
+				"name": "ubuntu-23-10-minimal",
+				"description": "Ubuntu 23.10 (Mantic) Minimal"
+			},
+			{
+				"filter": "ubuntu-pro-server/images/hvm-ssd/ubuntu-xenial-16.04",
+				"name": "ubuntu-pro-server-16-04",
+				"description": "Ubuntu Server Pro 16.04 LTS (Xenial)"
+			},
+			{
+				"filter": "ubuntu-pro-server/images/hvm-ssd/ubuntu-bionic-18.04",
+				"name": "ubuntu-pro-server-18-04",
+				"description": "Ubuntu Server Pro 18.04 LTS (Bionic)"
+			},
+			{
+				"filter": "ubuntu-pro-server/images/hvm-ssd/ubuntu-focal-20.04",
+				"name": "ubuntu-pro-server-20-04",
+				"description": "Ubuntu Server Pro 20.04 LTS (Focal)"
+			},
+			{
+				"filter": "ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04",
+				"name": "ubuntu-pro-server-22-04",
+				"description": "Ubuntu Server Pro 22.04 LTS (Jammy)"
+			}
+		]
+	},
+	{
+		"owner": "125523088429",
+		"name": "fedora",
+		"description": "Fedora",
+		"versions": [
+			{
+				"filter": "CentOS Stream 8",
+				"name": "centos-stream-8",
+				"description": "CentOS Stream 8"
+			},
+			{
+				"filter": "CentOS Stream 9",
+				"name": "centos-stream-9",
+				"description": "CentOS Stream 9"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-38",
+				"name": "fedora-38",
+				"description": "Fedora 38"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-39",
+				"name": "fedora-39",
+				"description": "Fedora 39"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-40",
+				"name": "fedora-40",
+				"description": "Fedora 40"
+			},
+			{
+				"filter": "fedora-coreos-39",
+				"name": "coreos-39",
+				"description": "Fedora CoreOS 39"
+			},
+			{
+				"filter": "fedora-coreos-40",
+				"name": "coreos-40",
+				"description": "Fedora CoreOS 40"
+			},
+			{
+				"filter": "fedora-coreos-41",
+				"name": "coreos-41",
+				"description": "Fedora CoreOS 41"
+			}
+		]
+	},
+	{
+		"owner": "136693071363",
+		"name": "debian",
+		"description": "Debian",
+		"versions": [
+			{
+				"filter": "debian-10",
+				"name": "debian-10",
+				"description": "Debian 10"
+			},
+			{
+				"filter": "debian-11",
+				"name": "debian-11",
+				"description": "Debian 11"
+			},
+			{
+				"filter": "debian-12",
+				"name": "debian-12",
+				"description": "Debian 12"
+			}
+		]
+	},
+	{
+		"owner": "137112412989",
+		"name": "amazon-linux",
+		"description": "Amazon Linux",
+		"versions": [
+			{
+				"filter": "amzn2-ami-hvm",
+				"name": "amzn2-ami-hvm",
+				"description": "Amazon Linux 2"
+			},
+			{
+				"filter": "amzn2-ami-minimal-hvm",
+				"name": "amzn2-ami-minimal",
+				"description": "Amazon Linux 2 Minimal"
+			},
+			{
+				"filter": "amzn2-ami-minimal-selinux",
+				"name": "amzn2-ami-minimal-selinux",
+				"description": "Amazon Linux 2 Minimal (SELinux Enforcing)"
+			},
+			{
+				"filter": "amzn2-ami-amd-hvm",
+				"name": "amzn2-ami-amd",
+				"description": "Amazon Linux 2 AMD"
+			},
+			{
+				"filter": "amzn2-ami-kernel",
+				"name": "amzn2-ami-kernel",
+				"description": "Amazon Linux 2 Kernel"
+			},
+			{
+				"filter": "amzn2-ami-graphics",
+				"name": "amzn2-ami-graphics",
+				"description": "Amazon Linux 2 Graphics"
+			},
+			{
+				"filter": "al2023-ami-2",
+				"name": "al2023",
+				"description": "Amazon Linux 2023"
+			},
+			{
+				"filter": "al2023-ami-minimal-2",
+				"name": "al2023-minimal",
+				"description": "Amazon Linux 2023 Minimal"
+			}
+		]
+	},
+	{
+		"owner": "309956199498",
+		"name": "redhat",
+		"description": "RedHat",
+		"versions": [
+			{
+				"filter": "RHEL-7.9",
+				"name": "rhel-7-9",
+				"description": "Red Hat Enterprise Linux 7.9"
+			},
+			{
+				"filter": "RHEL_HA-7.9",
+				"name": "rhel-7-9-ha",
+				"description": "Red Hat Enterprise Linux 7.9 with High Availability"
+			},
+			{
+				"filter": "RHEL-8.9",
+				"name": "rhel-8-9",
+				"description": "Red Hat Enterprise Linux 8.9"
+			},
+			{
+				"filter": "RHEL_HA-8.9",
+				"name": "rhel-8-9-ha",
+				"description": "Red Hat Enterprise Linux 8.9 with High Availability"
+			},
+			{
+				"filter": "RHEL-9.1",
+				"name": "rhel-9-1",
+				"description": "Red Hat Enterprise Linux 9.1"
+			},
+			{
+				"filter": "RHEL_HA-9.1",
+				"name": "rhel-9-1-ha",
+				"description": "Red Hat Enterprise Linux 9.1 with High Availability"
+			},
+			{
+				"filter": "RHEL-9.2",
+				"name": "rhel-9-2",
+				"description": "Red Hat Enterprise Linux 9.1"
+			},
+			{
+				"filter": "RHEL_HA-9.2",
+				"name": "rhel-9-2-ha",
+				"description": "Red Hat Enterprise Linux 9.2 with High Availability"
+			},
+			{
+				"filter": "RHEL-9.3",
+				"name": "rhel-9-3",
+				"description": "Red Hat Enterprise Linux 9.3"
+			},
+			{
+				"filter": "RHEL_HA-9.3",
+				"name": "rhel-9-3-ha",
+				"description": "Red Hat Enterprise Linux 9.3 with High Availability"
+			}
+		]
+	},
+	{
+		"owner": "628277914472",
+		"name": "apple",
+		"description": "Apple macOS",
+		"versions": [
+			{
+				"filter": "amzn-ec2-macos-12",
+				"name": "macos-12",
+				"description": "Apple macOS 12 (Monterey)"
+			},
+			{
+				"filter": "amzn-ec2-macos-13",
+				"name": "macos-13",
+				"description": "Apple macOS 13 (Ventura)"
+			},
+			{
+				"filter": "amzn-ec2-macos-14",
+				"name": "macos-14",
+				"description": "Apple macOS 14 (Sonoma)"
+			}
+		]
+	},
+	{
+		"owner": "647457786197",
+		"name": "arch-linux",
+		"description": "Arch Linux",
+		"versions": [
+			{
+				"filter": "arch-linux-std-hvm",
+				"name": "arch-linux",
+				"description": "Arch Linux"
+			},
+			{
+				"filter": "arch-linux-ec2-hvm",
+				"name": "arch-linux-ec2",
+				"description": "Arch Linux (EC2 optimized)"
+			}
+		]
+	},
+	{
+		"owner": "764336703387",
+		"name": "alma-linux",
+		"description": "AlmaLinux",
+		"versions": [
+			{
+				"filter": "AlmaLinux OS 8.9",
+				"name": "alma-linux-8-9",
+				"description": "AlmaLinux OS 8.9"
+			},
+			{
+				"filter": "AlmaLinux OS 9.1",
+				"name": "alma-linux-9-1",
+				"description": "AlmaLinux OS 9.1"
+			},
+			{
+				"filter": "AlmaLinux OS 9.2",
+				"name": "alma-linux-9-2",
+				"description": "AlmaLinux OS 9.2"
+			},
+			{
+				"filter": "AlmaLinux OS 9.3",
+				"name": "alma-linux-9-3",
+				"description": "AlmaLinux OS 9.3"
+			}
+		]
+	},
+	{
+		"owner": "782442783595",
+		"name": "freebsd",
+		"description": "FreeBSD",
+		"versions": [
+			{
+				"filter": "FreeBSD 13.1-STABLE",
+				"name": "freebsd-13-1",
+				"description": "FreeBSD 13.1"
+			},
+			{
+				"filter": "FreeBSD 13.2-STABLE",
+				"name": "freebsd-13-2",
+				"description": "FreeBSD 13.2"
+			},
+			{
+				"filter": "FreeBSD 13.3-STABLE",
+				"name": "freebsd-13-3",
+				"description": "FreeBSD 13.3"
+			},
+			{
+				"filter": "FreeBSD 14.0-STABLE",
+				"name": "freebsd-14-0",
+				"description": "FreeBSD 14.0"
+			}
+		]
+	},
+	{
+		"owner": "792107900819",
+		"name": "rocky-linux",
+		"description": "Rocky Linux",
+		"versions": [
+			{
+				"filter": "Rocky-8-EC2-Base-8.9",
+				"name": "rocky-linux-8-9",
+				"description": "Rocky 8.9"
+			},
+			{
+				"filter": "Rocky-8-EC2-LVM-8.9",
+				"name": "rocky-linux-8-9-lvm",
+				"description": "Rocky 8.9 with LVM"
+			},
+			{
+				"filter": "Rocky-9-EC2-Base-9.1",
+				"name": "rocky-linux-9-1",
+				"description": "Rocky 9.1"
+			},
+			{
+				"filter": "Rocky-9-EC2-LVM-9.1",
+				"name": "rocky-linux-9-1-lvm",
+				"description": "Rocky 9.1 with LVM"
+			},
+			{
+				"filter": "Rocky-9-EC2-Base-9.2",
+				"name": "rocky-linux-9-2",
+				"description": "Rocky 9.2"
+			},
+			{
+				"filter": "Rocky-9-EC2-LVM-9.2",
+				"name": "rocky-linux-9-2-lvm",
+				"description": "Rocky 9.2 with LVM"
+			},
+			{
+				"filter": "Rocky-9-EC2-Base-9.3",
+				"name": "rocky-linux-9-3",
+				"description": "Rocky 9.3"
+			},
+			{
+				"filter": "Rocky-9-EC2-LVM-9.3",
+				"name": "rocky-linux-9-3-lvm",
+				"description": "Rocky 9.3 with LVM"
+			}
+		]
+	},
+	{
+		"owner": "801119661308",
+		"name": "windows",
+		"description": "Microsoft Windows Server",
+		"versions": [
+			{
+				"filter": "TPM-Windows_Server-2016-English-Full-Base",
+				"name": "windows-server-2016",
+				"description": "Windows Server 2016"
+			},
+			{
+				"filter": "TPM-Windows_Server-2016-English-Core-Base",
+				"name": "windows-server-2016-core",
+				"description": "Windows Server 2016 Core"
+			},
+			{
+				"filter": "TPM-Windows_Server-2019-English-Full-Base",
+				"name": "windows-server-2019",
+				"description": "Windows Server 2019"
+			},
+			{
+				"filter": "TPM-Windows_Server-2019-English-Core-Base",
+				"name": "windows-server-2019-core",
+				"description": "Windows Server 2019 Core"
+			},
+			{
+				"filter": "TPM-Windows_Server-2019-English-Full-SQL_2019_Standard",
+				"name": "windows-server-2019-sql-2019",
+				"description": "Windows Server 2019 with SQL Server 2019 (Standard)"
+			},
+			{
+				"filter": "TPM-Windows_Server-2019-English-Full-SQL_2019_Enterprise",
+				"name": "windows-server-2019-sql-2019-enterprise",
+				"description": "Windows Server 2019 with SQL Server 2019 (Enterprise)"
+			},
+			{
+				"filter": "TPM-Windows_Server-2022-English-Full-Base",
+				"name": "windows-server-2022",
+				"description": "Windows Server 2022"
+			},
+			{
+				"filter": "TPM-Windows_Server-2022-English-Core-Base",
+				"name": "windows-server-2022-core",
+				"description": "Windows Server 2022 Core"
+			},
+			{
+				"filter": "TPM-Windows_Server-2022-English-Full-SQL_2022_Standard",
+				"name": "windows-server-2022-sql-2022",
+				"description": "Windows Server 2022 with SQL Server 2022 (Standard)"
+			},
+			{
+				"filter": "TPM-Windows_Server-2022-English-Full-SQL_2022_Enterprise",
+				"name": "windows-server-2022-sql-2022-enterprise",
+				"description": "Windows Server 2022 with SQL Server 2022 (Enterprise)"
+			}
+		]
+	}
+]

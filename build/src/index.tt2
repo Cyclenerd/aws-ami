@@ -1,0 +1,237 @@
+[%-
+	url = '/';
+	PROCESS include_header.tt2;
+-%]
+
+<div class="row mt-2 mb-2">
+<div class="col">
+<ul class="nav nav-pills">
+[% FOREACH operatingSystem IN operatingSystems %]
+<li class="nav-item">
+	<button
+		class="nav-link"
+		onclick="[% operatingSystem.name.remove('\W+') %]();"
+		id="[% operatingSystem.name.remove('\W+') %]"
+	>[% operatingSystem.description %]</button></li>
+[% END %]
+</ul>
+[% FOREACH operatingSystem IN operatingSystems %]
+<ul class="nav nav-pills visually-hidden os-versions" id="versions-[% operatingSystem.name %]">
+[% FOREACH operatingSystemVersion IN operatingSystem.versions %]
+<li class="nav-item">
+	<button
+		class="nav-link"
+		onclick="[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]();"
+		id="[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]"
+	>[% operatingSystemVersion.description %]</button></li>
+[% END %]
+</ul>
+[% END %]
+[% FOREACH operatingSystem IN operatingSystems; FOREACH operatingSystemVersion IN operatingSystem.versions; %]
+<ul class="nav nav-pills visually-hidden os-architectures" id="architectures-[% operatingSystem.name %]-[% operatingSystemVersion.name %]">
+<li class="nav-item">
+	<button
+		class="nav-link"
+		onclick="[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_x86_64();"
+		id="[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_x86_64"
+	>[% operatingSystemVersion.description %] (X86_64)</button></li>
+<li class="nav-item">
+	<button
+		class="nav-link"
+		onclick="[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_arm64();"
+		id="[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_arm64"
+	>[% operatingSystemVersion.description %] (ARM64)</button></li>
+</ul>
+[% END; END; %]
+</div> <!-- // col -->
+</div> <!-- // row -->
+
+<h1 id="title">Operating System Images</h1>
+
+<div id="table"></div>
+
+<div class="modal modal-dialog-scrollable" id="details" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h2 class="modal-title fs-5" id="title-details">Details</h2>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<dl>
+					<dt>Name</dt>
+					<dd class="font-monospace" id="ami-name"></dd>
+					<dt>Creation Date</dt>
+					<dd id="ami-creation-date"></dd>
+					<dt>Architecture</dt>
+					<dd id="ami-architecture"></dd>
+					<dt>AMI (us-east-1)</dt>
+					<dd><code id="ami-image-id"></code></dd>
+					<dt>Owner</dt>
+					<dd id="ami-owner-id"></dd>
+					<dt>Description</dt>
+					<dd id="ami-description"></dd>
+					<dt>Platform</dt>
+					<dd id="ami-platform-details"></dd>
+					<dt>Operation</dt>
+					<dd>
+						<span id="ami-operation"></span>
+						(<span id="ami-costs"></span>)
+					</dd>
+					<dt>EBS Volume Size</dt>
+					<dd id="ami-ebs-volume-size"></dd>
+					<dt>EBS Volume Type</dt>
+					<dd id="ami-ebs-volume-type"></dd>
+				</dl>
+			</div>
+			<div class="modal-footer">
+				<a
+					href="https://gist.github.com/Cyclenerd/fc5c51b25539a735cfb6707948255992"
+					target="_github"
+					class="btn btn-primary"
+					role="button">Snippets</a>
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+var table = new Tabulator("#table", {
+	ajaxURL:"/images.json",
+	height:"550px",
+	layout:"fitColumns",
+	headerFilterLiveFilterDelay:10,
+	columns:[
+		{title:"Name", field:"name", headerFilter:"input", headerFilterPlaceholder:"Filter image name...", width: 520, responsive:0},
+		{title:"Creation Date", field:"creationDate", headerFilter:"input", width: 220},
+		{title:"Arch.", field:"architecture", headerFilter:"input", width: 120},
+		{title:"AMI (us-east-1)", field:"imageId", headerFilter:"input", width: 220},
+		{title:"Owner", field:"ownerId", headerFilter:"input", width: 160},
+		{title:"Description", field:"description", headerFilter:"input"},
+		{title:"Platform", field:"platformDetails", visible: false},
+		{title:"Operation", field:"usageOperation", visible: false},
+		{title:"Size", field:"deviceEbsVolumeSize", visible: false},
+		{title:"Type", field:"deviceEbsVolumeType", visible: false}
+	],
+	initialSort:[
+		{column:"creationDate", dir:"desc"}
+	]
+});
+function updateDetails(row) {
+	console.log("Update details");
+	document.getElementById("ami-name").innerHTML             = row.getData().name;
+	document.getElementById("ami-creation-date").innerHTML    = row.getData().creationDate;
+	document.getElementById("ami-architecture").innerHTML     = row.getData().architecture;
+	document.getElementById("ami-image-id").innerHTML         = row.getData().imageId;
+	document.getElementById("ami-owner-id").innerHTML         = row.getData().ownerId;
+	document.getElementById("ami-description").innerHTML      = row.getData().description;
+	document.getElementById("ami-platform-details").innerHTML = row.getData().platformDetails;
+	document.getElementById("ami-operation").innerHTML        = row.getData().usageOperation;
+	document.getElementById("ami-ebs-volume-size").innerHTML  = row.getData().deviceEbsVolumeSize;
+	document.getElementById("ami-ebs-volume-type").innerHTML  = row.getData().deviceEbsVolumeType;
+	if (row.getData().usageOperation == 'RunInstances') {
+		document.getElementById("ami-costs").innerHTML = "Free";
+	} else {
+		document.getElementById("ami-costs").innerHTML = "Paid!";
+	}
+}
+table.on("rowClick", function(e, row){
+	console.log("Click");
+	updateDetails(row);
+	const detailsModal = new bootstrap.Modal('#details');
+	detailsModal.show();
+});
+[% FOREACH operatingSystem IN operatingSystems %]
+function [% operatingSystem.name.remove('\W+') %]() {
+	console.log("Filter owner '[% operatingSystem.owner %]'.");
+	const osVersions = Array.from(document.getElementsByClassName('os-versions'));
+	osVersions.forEach(osVersion => {
+		osVersion.classList.add('visually-hidden');
+	});
+	const osArchitectures = Array.from(document.getElementsByClassName('os-architectures'));
+	osArchitectures.forEach(osArchitecture => {
+		osArchitecture.classList.add('visually-hidden');
+	});
+	document.getElementById('versions-[% operatingSystem.name %]').classList.remove("visually-hidden");
+	const navLinks = Array.from(document.getElementsByClassName('nav-link'));
+	navLinks.forEach(navLink => {
+		navLink.classList.remove('active');
+	});
+	document.getElementById('[% operatingSystem.name.remove('\W+') %]').classList.add("active");
+	table.clearFilter(true);
+	table.addFilter("ownerId", "=", "[% operatingSystem.owner %]");
+	document.getElementById("title").innerHTML = "[% operatingSystem.description %]";
+}
+[% FOREACH operatingSystemVersion IN operatingSystem.versions %]
+function [% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]() {
+	console.log("Filter owner '[% operatingSystem.owner %]' and name '[% operatingSystemVersion.filter %]'.");
+	const osVersions = Array.from(document.getElementsByClassName('os-versions'));
+	osVersions.forEach(osVersion => {
+		osVersion.classList.add('visually-hidden');
+	});
+	const osArchitectures = Array.from(document.getElementsByClassName('os-architectures'));
+	osArchitectures.forEach(osArchitecture => {
+		osArchitecture.classList.add('visually-hidden');
+	});
+	document.getElementById('versions-[% operatingSystem.name %]').classList.remove("visually-hidden");
+	document.getElementById('architectures-[% operatingSystem.name %]-[% operatingSystemVersion.name %]').classList.remove("visually-hidden");
+	const navLinks = Array.from(document.getElementsByClassName('nav-link'));
+	navLinks.forEach(navLink => {
+		navLink.classList.remove('active');
+	});
+	document.getElementById('[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]').classList.add("active");
+	table.clearFilter(true);
+	table.addFilter("ownerId", "=", "[% operatingSystem.owner %]");
+	table.addFilter("name", "regex", "^[% operatingSystemVersion.filter %]");
+	document.getElementById("title").innerHTML = "[% operatingSystemVersion.description %]";
+}
+function [% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_x86_64() {
+	console.log("Filter owner '[% operatingSystem.owner %]', name '[% operatingSystemVersion.filter %]' and architecture 'x86_64'.");
+	const osVersions = Array.from(document.getElementsByClassName('os-versions'));
+	osVersions.forEach(osVersion => {
+		osVersion.classList.add('visually-hidden');
+	});
+	const osArchitectures = Array.from(document.getElementsByClassName('os-architectures'));
+	osArchitectures.forEach(osArchitecture => {
+		osArchitecture.classList.add('visually-hidden');
+	});
+	document.getElementById('versions-[% operatingSystem.name %]').classList.remove("visually-hidden");
+	document.getElementById('architectures-[% operatingSystem.name %]-[% operatingSystemVersion.name %]').classList.remove("visually-hidden");
+	const navLinks = Array.from(document.getElementsByClassName('nav-link'));
+	navLinks.forEach(navLink => {
+		navLink.classList.remove('active');
+	});
+	document.getElementById('[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_x86_64').classList.add("active");
+	table.clearFilter(true);
+	table.addFilter("ownerId", "=", "[% operatingSystem.owner %]");
+	table.addFilter("name", "regex", "^[% operatingSystemVersion.filter %]");
+	table.addFilter("architecture", "like", "x86_64");
+	document.getElementById("title").innerHTML = "[% operatingSystemVersion.description %] (X86_64)";
+}
+function [% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_arm64() {
+	console.log("Filter owner '[% operatingSystem.owner %]', name '[% operatingSystemVersion.filter %]' and architecture 'arm64'.");
+	const osVersions = Array.from(document.getElementsByClassName('os-versions'));
+	osVersions.forEach(osVersion => {
+		osVersion.classList.add('visually-hidden');
+	});
+	const osArchitectures = Array.from(document.getElementsByClassName('os-architectures'));
+	osArchitectures.forEach(osArchitecture => {
+		osArchitecture.classList.add('visually-hidden');
+	});
+	document.getElementById('versions-[% operatingSystem.name %]').classList.remove("visually-hidden");
+	document.getElementById('architectures-[% operatingSystem.name %]-[% operatingSystemVersion.name %]').classList.remove("visually-hidden");
+	const navLinks = Array.from(document.getElementsByClassName('nav-link'));
+	navLinks.forEach(navLink => {
+		navLink.classList.remove('active');
+	});
+	document.getElementById('[% operatingSystem.name.remove('\W+') %]_[% operatingSystemVersion.name.remove('\W+') %]_arm64').classList.add("active");
+	table.clearFilter(true);
+	table.addFilter("ownerId", "=", "[% operatingSystem.owner %]");
+	table.addFilter("name", "regex", "^[% operatingSystemVersion.filter %]");
+	table.addFilter("architecture", "like", "arm64");
+	document.getElementById("title").innerHTML = "[% operatingSystemVersion.description %] (ARM64)";
+}
+[% END; END; %]
+</script>
+[% PROCESS include_footer.tt2 %]

@@ -1,0 +1,12 @@
+/web/**
+/build/import/**
+/build/*.csv
+/build/*.txt
+/build/*.gz
+/build/*.json
+/build/*.yml
+/build/*.conf
+/build/*.db
+/build/*.db-journal
+!/build/operating-systems.json
+.~lock*
