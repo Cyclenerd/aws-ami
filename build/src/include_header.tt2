@@ -2,6 +2,8 @@
 <html lang="en" data-bs-theme="dark">
 <head>
 <title>[% IF title %][% title %][% ELSE %][% site.title %][% END %]</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 [% IF url %]<link rel="canonical" href="[% site.url %][% url %]">[% END %]
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
