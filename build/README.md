@@ -33,23 +33,38 @@ plackup --host "127.0.0.1" --port "8080"
 Names:
 
 ```sql
-SELECT COUNT("imageId") AS imageCount, MAX("imageId"), "name" FROM images WHERE "state" = "available" GROUP BY "name" ORDER BY imageCount DESC;
+SELECT COUNT("imageId") AS imageCount, MAX("imageId"), "name"
+FROM images
+WHERE "state" = "available"
+GROUP BY "name"
+ORDER BY imageCount DESC;
 ```
 
 Platform Details:
 
 ```sql
-SELECT COUNT("imageId") AS imageCount, "platformDetails" FROM images WHERE "state" = "available" GROUP BY "platformDetails" ORDER BY imageCount DESC;
+SELECT COUNT("imageId") AS imageCount, "platformDetails"
+FROM images
+WHERE "state" = "available"
+GROUP BY "platformDetails"
+ORDER BY imageCount DESC;
 ```
 
 Architectures:
 
 ```sql
-SELECT COUNT("imageId") AS imageCount, "architecture" FROM images WHERE "state" = "available" GROUP BY "architecture" ORDER BY imageCount DESC;
+SELECT COUNT("imageId") AS imageCount, "architecture"
+FROM images
+WHERE "state" = "available"
+GROUP BY "architecture"
+ORDER BY imageCount DESC;
 ```
 
 States:
 
 ```sql
-SELECT COUNT("imageId") AS imageCount, "imageType" FROM images GROUP BY "imageType" ORDER BY imageCount DESC;
-``
+SELECT COUNT("imageId") AS imageCount, "imageType"
+FROM images
+GROUP BY "imageType"
+ORDER BY imageCount DESC;
+```
