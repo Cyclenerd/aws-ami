@@ -87,7 +87,7 @@
 			<div class="modal-footer">
 				<a
 					href="https://gist.github.com/Cyclenerd/fc5c51b25539a735cfb6707948255992"
-					target="_github"
+					target="_blank"
 					class="btn btn-primary"
 					role="button">Snippets</a>
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
