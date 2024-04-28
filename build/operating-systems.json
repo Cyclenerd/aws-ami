@@ -87,6 +87,23 @@
 				"description": "Ubuntu 23.10 (Mantic) Minimal"
 			},
 			{
+				"filter": "ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04",
+				"name": "ubuntu-24-04",
+				"description": "Ubuntu 24.04 (Noble Numbat)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-noble-24.04",
+				"name": "ubuntu-24-04-minimal",
+				"description": "Ubuntu 24.04 (Noble Numbat) Minimal"
+			}
+		]
+	},
+	{
+		"owner": "099720109477",
+		"name": "ubuntu-pro",
+		"description": "Ubuntu Pro",
+		"versions": [
+			{
 				"filter": "ubuntu-pro-server/images/hvm-ssd/ubuntu-xenial-16.04",
 				"name": "ubuntu-pro-server-16-04",
 				"description": "Ubuntu Server Pro 16.04 LTS (Xenial)"
@@ -105,6 +122,11 @@
 				"filter": "ubuntu-pro-server/images/hvm-ssd/ubuntu-jammy-22.04",
 				"name": "ubuntu-pro-server-22-04",
 				"description": "Ubuntu Server Pro 22.04 LTS (Jammy)"
+			},
+			{
+				"filter": "ubuntu-pro-server/images/hvm-ssd-gp3/ubuntu-noble-24.04",
+				"name": "ubuntu-pro-server-24-04",
+				"description": "Ubuntu Server Pro 24.04 LTS (Noble Numbat)"
 			}
 		]
 	},
