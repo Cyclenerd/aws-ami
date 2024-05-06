@@ -64,7 +64,7 @@ foreach my $image (@{$images->{'Images'}}) {
 		die "ERROR: Image name missing!\n";
 	}
 	my $insert = qq ~
-	INSERT INTO 'images' (
+	REPLACE INTO 'images' (
 		'imageId',
 		'name',
 		'architecture',
