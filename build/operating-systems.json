@@ -272,14 +272,14 @@
 				"description": "Red Hat Enterprise Linux 8.9 with High Availability"
 			},
 			{
-				"filter": "RHEL-9.1",
-				"name": "rhel-9-1",
-				"description": "Red Hat Enterprise Linux 9.1"
+				"filter": "RHEL-8.10",
+				"name": "rhel-8-10",
+				"description": "Red Hat Enterprise Linux 8.10"
 			},
 			{
-				"filter": "RHEL_HA-9.1",
-				"name": "rhel-9-1-ha",
-				"description": "Red Hat Enterprise Linux 9.1 with High Availability"
+				"filter": "RHEL_HA-8.10",
+				"name": "rhel-8-10-ha",
+				"description": "Red Hat Enterprise Linux 8.10 with High Availability"
 			},
 			{
 				"filter": "RHEL-9.2",
@@ -363,9 +363,9 @@
 				"description": "AlmaLinux OS 8.9"
 			},
 			{
-				"filter": "AlmaLinux OS 9.1",
-				"name": "alma-linux-9-1",
-				"description": "AlmaLinux OS 9.1"
+				"filter": "AlmaLinux OS 8.10",
+				"name": "alma-linux-8-10",
+				"description": "AlmaLinux OS 8.10"
 			},
 			{
 				"filter": "AlmaLinux OS 9.2",
@@ -427,14 +427,14 @@
 				"description": "Rocky 8.9 with LVM"
 			},
 			{
-				"filter": "Rocky-9-EC2-Base-9.1",
-				"name": "rocky-linux-9-1",
-				"description": "Rocky 9.1"
+				"filter": "Rocky-8-EC2-Base-8.10",
+				"name": "rocky-linux-8-10",
+				"description": "Rocky 8.10"
 			},
 			{
-				"filter": "Rocky-9-EC2-LVM-9.1",
-				"name": "rocky-linux-9-1-lvm",
-				"description": "Rocky 9.1 with LVM"
+				"filter": "Rocky-8-EC2-LVM-8.10",
+				"name": "rocky-linux-8-10-lvm",
+				"description": "Rocky 8.10 with LVM"
 			},
 			{
 				"filter": "Rocky-9-EC2-Base-9.2",
