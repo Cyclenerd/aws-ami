@@ -408,6 +408,11 @@
 				"filter": "FreeBSD 14.0-STABLE",
 				"name": "freebsd-14-0",
 				"description": "FreeBSD 14.0"
+			},
+			{
+				"filter": "FreeBSD 14.1-STABLE",
+				"name": "freebsd-14-1",
+				"description": "FreeBSD 14.1"
 			}
 		]
 	},
