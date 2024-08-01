@@ -56,6 +56,11 @@ jobs:
         run: |
           jq -e '.[] | .name' "web/images.json" | grep "ubuntu-minimal/images/hvm-ssd/ubuntu-jammy-22.04-amd64" || exit 9
 
+      - name: Commit last build
+        run: |
+          cd build || exit 9
+          bash commit.sh || exit 9
+
       - name: 🌍 Setup Pages
         uses: actions/configure-pages@v5
       # https://github.com/marketplace/actions/upload-github-pages-artifact

@@ -9,4 +9,5 @@
 /build/*.db
 /build/*.db-journal
 !/build/operating-systems.json
+!/build/last_build.txt
 .~lock*
