@@ -332,6 +332,11 @@
 				"filter": "amzn-ec2-macos-14",
 				"name": "macos-14",
 				"description": "Apple macOS 14 (Sonoma)"
+			},
+			{
+				"filter": "amzn-ec2-macos-15",
+				"name": "macos-15",
+				"description": "Apple macOS 15 (Sequoia)"
 			}
 		]
 	},
