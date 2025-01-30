@@ -171,9 +171,14 @@
 				"description": "Fedora 39"
 			},
 			{
-				"filter": "Fedora-Cloud-Base-AmazonEC2",
+				"filter": "Fedora-Cloud-Base-AmazonEC2*-40-202",
 				"name": "fedora-40",
-				"description": "Fedora 40..."
+				"description": "Fedora 40"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2*-41-202",
+				"name": "fedora-41",
+				"description": "Fedora 41"
 			},
 			{
 				"filter": "fedora-coreos-39",
