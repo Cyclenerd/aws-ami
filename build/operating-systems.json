@@ -8,6 +8,11 @@
 				"filter": "suse-sles-15-sp5-v[0-9]*-hvm",
 				"name": "suse-sles-15-sp5",
 				"description": "SUSE Linux Enterprise Server 15 SP5"
+			},
+			{
+				"filter": "suse-sles-15-sp6-v[0-9]*-hvm",
+				"name": "suse-sles-15-sp6",
+				"description": "SUSE Linux Enterprise Server 15 SP6"
 			}
 		]
 	},
