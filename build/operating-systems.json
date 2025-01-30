@@ -325,6 +325,16 @@
 				"filter": "RHEL_HA-9.4",
 				"name": "rhel-9-4-ha",
 				"description": "Red Hat Enterprise Linux 9.4 with High Availability"
+			},
+			{
+				"filter": "RHEL-9.5",
+				"name": "rhel-9-5",
+				"description": "Red Hat Enterprise Linux 9.5"
+			},
+			{
+				"filter": "RHEL_HA-9.5",
+				"name": "rhel-9-5-ha",
+				"description": "Red Hat Enterprise Linux 9.5 with High Availability"
 			}
 		]
 	},
@@ -401,6 +411,11 @@
 				"filter": "AlmaLinux OS 9.4",
 				"name": "alma-linux-9-4",
 				"description": "AlmaLinux OS 9.4"
+			},
+			{
+				"filter": "AlmaLinux OS 9.5",
+				"name": "alma-linux-9-5",
+				"description": "AlmaLinux OS 9.5"
 			}
 		]
 	},
@@ -490,6 +505,16 @@
 				"filter": "Rocky-9-EC2-LVM-9.4",
 				"name": "rocky-linux-9-4-lvm",
 				"description": "Rocky 9.4 with LVM"
+			},
+			{
+				"filter": "Rocky-9-EC2-Base-9.5",
+				"name": "rocky-linux-9-5",
+				"description": "Rocky 9.5"
+			},
+			{
+				"filter": "Rocky-9-EC2-LVM-9.5",
+				"name": "rocky-linux-9-5-lvm",
+				"description": "Rocky 9.5 with LVM"
 			}
 		]
 	},
