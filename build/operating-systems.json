@@ -446,8 +446,8 @@
 			},
 			{
 				"filter": "FreeBSD 13.3-STABLE",
-				"name": "freebsd-13-3",
-				"description": "FreeBSD 13.3"
+				"name": "freebsd-13-5",
+				"description": "FreeBSD 13.5"
 			},
 			{
 				"filter": "FreeBSD 14.0-STABLE",
@@ -458,6 +458,16 @@
 				"filter": "FreeBSD 14.1-STABLE",
 				"name": "freebsd-14-1",
 				"description": "FreeBSD 14.1"
+			},
+			{
+				"filter": "FreeBSD 14.2-STABLE",
+				"name": "freebsd-14-2",
+				"description": "FreeBSD 14.2"
+			},
+			{
+				"filter": "FreeBSD 15",
+				"name": "freebsd-15",
+				"description": "FreeBSD 15"
 			}
 		]
 	},
