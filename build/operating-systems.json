@@ -13,6 +13,11 @@
 				"filter": "suse-sles-15-sp6-v[0-9]*-hvm",
 				"name": "suse-sles-15-sp6",
 				"description": "SUSE Linux Enterprise Server 15 SP6"
+			},
+			{
+				"filter": "suse-sles-15-sp7-v[0-9]*-hvm",
+				"name": "suse-sles-15-sp7",
+				"description": "SUSE Linux Enterprise Server 15 SP7"
 			}
 		]
 	},
@@ -102,14 +107,24 @@
 				"description": "Ubuntu 24.04 (Noble Numbat) Minimal"
 			},
 			{
-				"filter": "ubuntu/images/hvm-ssd/ubuntu-oracular-24.10",
+				"filter": "ubuntu/images/hvm-ssd-gp3/ubuntu-oracular-24.10",
 				"name": "ubuntu-24-10",
 				"description": "Ubuntu 24.10 (Oracular)"
 			},
 			{
-				"filter": "ubuntu-minimal/images/hvm-ssd/ubuntu-oracular-24.10",
+				"filter": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-oracular-24.10",
 				"name": "ubuntu-24-10-minimal",
-				"description": "Ubuntu 23.10 (Oracular) Minimal"
+				"description": "Ubuntu 24.10 (Oracular) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd-gp3/ubuntu-plucky-25.04",
+				"name": "ubuntu-25-04",
+				"description": "Ubuntu 25.04 (Plucky)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-plucky-25.04",
+				"name": "ubuntu-25-04-minimal",
+				"description": "Ubuntu 25.04 (Plucky) Minimal"
 			}
 		]
 	},
@@ -199,6 +214,16 @@
 				"filter": "fedora-coreos-42",
 				"name": "coreos-42",
 				"description": "Fedora CoreOS 42"
+			},
+			{
+				"filter": "fedora-coreos-43",
+				"name": "coreos-43",
+				"description": "Fedora CoreOS 43"
+			},
+			{
+				"filter": "fedora-coreos-44",
+				"name": "coreos-44",
+				"description": "Fedora CoreOS 44"
 			}
 		]
 	},
@@ -221,6 +246,11 @@
 				"filter": "debian-12",
 				"name": "debian-12",
 				"description": "Debian 12"
+			},
+			{
+				"filter": "debian-13",
+				"name": "debian-13",
+				"description": "Debian 13"
 			}
 		]
 	},
@@ -274,77 +304,98 @@
 	{
 		"owner": "309956199498",
 		"name": "redhat",
-		"description": "RedHat",
+		"description": "Red Hat Enterprise Linux",
 		"versions": [
 			{
 				"filter": "RHEL-7.9",
 				"name": "rhel-7-9",
-				"description": "Red Hat Enterprise Linux 7.9"
+				"description": "RHEL 7.9"
 			},
 			{
 				"filter": "RHEL_HA-7.9",
 				"name": "rhel-7-9-ha",
-				"description": "Red Hat Enterprise Linux 7.9 with High Availability"
+				"description": "RHEL 7.9 with HA"
 			},
 			{
 				"filter": "RHEL-8.9",
 				"name": "rhel-8-9",
-				"description": "Red Hat Enterprise Linux 8.9"
+				"description": "RHEL 8.9"
 			},
 			{
 				"filter": "RHEL_HA-8.9",
 				"name": "rhel-8-9-ha",
-				"description": "Red Hat Enterprise Linux 8.9 with High Availability"
+				"description": "RHEL 8.9 with HA"
 			},
 			{
 				"filter": "RHEL-8.10",
 				"name": "rhel-8-10",
-				"description": "Red Hat Enterprise Linux 8.10"
+				"description": "RHEL 8.10"
 			},
 			{
 				"filter": "RHEL_HA-8.10",
 				"name": "rhel-8-10-ha",
-				"description": "Red Hat Enterprise Linux 8.10 with High Availability"
+				"description": "RHEL 8.10 with HA"
 			},
 			{
 				"filter": "RHEL-9.2",
 				"name": "rhel-9-2",
-				"description": "Red Hat Enterprise Linux 9.1"
+				"description": "RHEL 9.1"
 			},
 			{
 				"filter": "RHEL_HA-9.2",
 				"name": "rhel-9-2-ha",
-				"description": "Red Hat Enterprise Linux 9.2 with High Availability"
+				"description": "RHEL 9.2 with HA"
 			},
 			{
 				"filter": "RHEL-9.3",
 				"name": "rhel-9-3",
-				"description": "Red Hat Enterprise Linux 9.3"
+				"description": "RHEL 9.3"
 			},
 			{
 				"filter": "RHEL_HA-9.3",
 				"name": "rhel-9-3-ha",
-				"description": "Red Hat Enterprise Linux 9.3 with High Availability"
+				"description": "RHEL 9.3 with HA"
 			},
 			{
 				"filter": "RHEL-9.4",
 				"name": "rhel-9-4",
-				"description": "Red Hat Enterprise Linux 9.4"
+				"description": "RHEL 9.4"
 			},
 			{
 				"filter": "RHEL_HA-9.4",
 				"name": "rhel-9-4-ha",
-				"description": "Red Hat Enterprise Linux 9.4 with High Availability"
+				"description": "RHEL 9.4 with HA"
 			},
 			{
 				"filter": "RHEL-9.5",
 				"name": "rhel-9-5",
-				"description": "Red Hat Enterprise Linux 9.5"
+				"description": "RHEL 9.5"
 			},
 			{
 				"filter": "RHEL_HA-9.5",
 				"name": "rhel-9-5-ha",
-				"description": "Red Hat Enterprise Linux 9.5 with High Availability"
+				"description": "RHEL 9.5 with HA"
+			},
+			{
+				"filter": "RHEL-9.6",
+				"name": "rhel-9-6",
+				"description": "RHEL 9.6"
+			},
+			{
+				"filter": "RHEL_HA-9.6",
+				"name": "rhel-9-6-ha",
+				"description": "RHEL 9.6 with HA"
+			}
+			,
+			{
+				"filter": "RHEL-10.0",
+				"name": "rhel-10-0",
+				"description": "RHEL 9.6"
+			},
+			{
+				"filter": "RHEL_HA-10.0",
+				"name": "rhel-10-0-ha",
+				"description": "RHEL 10.0 with HA"
 			}
 		]
 	},
@@ -426,6 +477,16 @@
 				"filter": "AlmaLinux OS 9.5",
 				"name": "alma-linux-9-5",
 				"description": "AlmaLinux OS 9.5"
+			},
+			{
+				"filter": "AlmaLinux OS 9.6",
+				"name": "alma-linux-9-6",
+				"description": "AlmaLinux OS 9.6"
+			},
+			{
+				"filter": "AlmaLinux OS 10.0",
+				"name": "alma-linux-10-0",
+				"description": "AlmaLinux OS 10.0"
 			}
 		]
 	},
@@ -535,6 +596,26 @@
 				"filter": "Rocky-9-EC2-LVM-9.5",
 				"name": "rocky-linux-9-5-lvm",
 				"description": "Rocky 9.5 with LVM"
+			},
+			{
+				"filter": "Rocky-9-EC2-Base-9.6",
+				"name": "rocky-linux-9-6",
+				"description": "Rocky 9.6"
+			},
+			{
+				"filter": "Rocky-9-EC2-LVM-9.6",
+				"name": "rocky-linux-9-6-lvm",
+				"description": "Rocky 9.6 with LVM"
+			},
+			{
+				"filter": "Rocky-10-EC2-Base-10.0",
+				"name": "rocky-linux-10-0",
+				"description": "Rocky 10.0"
+			},
+			{
+				"filter": "Rocky-10-EC2-LVM-10.0",
+				"name": "rocky-linux-10-0-lvm",
+				"description": "Rocky 10.0 with LVM"
 			}
 		]
 	},
