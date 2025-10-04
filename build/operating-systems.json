@@ -176,24 +176,9 @@
 				"description": "CentOS Stream 9"
 			},
 			{
-				"filter": "Fedora-Cloud-Base-38",
-				"name": "fedora-38",
-				"description": "Fedora 38"
-			},
-			{
 				"filter": "Fedora-Cloud-Base-39",
 				"name": "fedora-39",
 				"description": "Fedora 39"
-			},
-			{
-				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-40",
-				"name": "fedora-40",
-				"description": "Fedora 40"
-			},
-			{
-				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-41",
-				"name": "fedora-41",
-				"description": "Fedora 41"
 			},
 			{
 				"filter": "fedora-coreos-39",
@@ -201,9 +186,19 @@
 				"description": "Fedora CoreOS 39"
 			},
 			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-40",
+				"name": "fedora-40",
+				"description": "Fedora 40"
+			},
+			{
 				"filter": "fedora-coreos-40",
 				"name": "coreos-40",
 				"description": "Fedora CoreOS 40"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-41",
+				"name": "fedora-41",
+				"description": "Fedora 41"
 			},
 			{
 				"filter": "fedora-coreos-41",
@@ -211,14 +206,29 @@
 				"description": "Fedora CoreOS 41"
 			},
 			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-42",
+				"name": "fedora-42",
+				"description": "Fedora 42"
+			},
+			{
 				"filter": "fedora-coreos-42",
 				"name": "coreos-42",
 				"description": "Fedora CoreOS 42"
 			},
 			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-43",
+				"name": "fedora-43",
+				"description": "Fedora 43"
+			},
+			{
 				"filter": "fedora-coreos-43",
 				"name": "coreos-43",
 				"description": "Fedora CoreOS 43"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-44",
+				"name": "fedora-44",
+				"description": "Fedora 44"
 			},
 			{
 				"filter": "fedora-coreos-44",
