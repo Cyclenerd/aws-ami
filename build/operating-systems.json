@@ -18,6 +18,11 @@
 				"filter": "suse-sles-15-sp7-v[0-9]*-hvm",
 				"name": "suse-sles-15-sp7",
 				"description": "SUSE Linux Enterprise Server 15 SP7"
+			},
+			{
+				"filter": "suse-sles-16-0-v[0-9]*-hvm",
+				"name": "suse-sles-16-0",
+				"description": "SUSE Linux Enterprise Server 16.0"
 			}
 		]
 	},
@@ -125,6 +130,26 @@
 				"filter": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-plucky-25.04",
 				"name": "ubuntu-25-04-minimal",
 				"description": "Ubuntu 25.04 (Plucky) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd-gp3/ubuntu-questing-25.10",
+				"name": "ubuntu-25-10",
+				"description": "Ubuntu 25.10 (Questing)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-questing-25.10",
+				"name": "ubuntu-25-10-minimal",
+				"description": "Ubuntu 25.10 (Questing) Minimal"
+			},
+			{
+				"filter": "ubuntu/images/hvm-ssd-gp3/ubuntu-resolute-26.04",
+				"name": "ubuntu-26-04",
+				"description": "Ubuntu 26.04 (Resolute)"
+			},
+			{
+				"filter": "ubuntu-minimal/images/hvm-ssd-gp3/ubuntu-resolute-26.04",
+				"name": "ubuntu-26-04-minimal",
+				"description": "Ubuntu 26.04 (Resolute) Minimal"
 			}
 		]
 	},
@@ -234,6 +259,16 @@
 				"filter": "fedora-coreos-44",
 				"name": "coreos-44",
 				"description": "Fedora CoreOS 44"
+			},
+			{
+				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-45",
+				"name": "fedora-45",
+				"description": "Fedora 45"
+			},
+			{
+				"filter": "fedora-coreos-45",
+				"name": "coreos-45",
+				"description": "Fedora CoreOS 45"
 			}
 		]
 	},
@@ -395,17 +430,36 @@
 				"filter": "RHEL_HA-9.6",
 				"name": "rhel-9-6-ha",
 				"description": "RHEL 9.6 with HA"
-			}
-			,
+			},
+			{
+				"filter": "RHEL-9.7",
+				"name": "rhel-9-7",
+				"description": "RHEL 9.7"
+			},
+			{
+				"filter": "RHEL_HA-9.7",
+				"name": "rhel-9-7-ha",
+				"description": "RHEL 9.7 with HA"
+			},
 			{
 				"filter": "RHEL-10.0",
 				"name": "rhel-10-0",
-				"description": "RHEL 9.6"
+				"description": "RHEL 10.0"
 			},
 			{
 				"filter": "RHEL_HA-10.0",
 				"name": "rhel-10-0-ha",
 				"description": "RHEL 10.0 with HA"
+			},
+			{
+				"filter": "RHEL-10.1",
+				"name": "rhel-10-1",
+				"description": "RHEL 10.1"
+			},
+			{
+				"filter": "RHEL_HA-10.1",
+				"name": "rhel-10-1-ha",
+				"description": "RHEL 10.1 with HA"
 			}
 		]
 	},
@@ -499,9 +553,19 @@
 				"description": "AlmaLinux OS 9.6"
 			},
 			{
+				"filter": "AlmaLinux OS 9.7",
+				"name": "alma-linux-9-7",
+				"description": "AlmaLinux OS 9.7"
+			},
+			{
 				"filter": "AlmaLinux OS 10.0",
 				"name": "alma-linux-10-0",
 				"description": "AlmaLinux OS 10.0"
+			},
+			{
+				"filter": "AlmaLinux OS 10.1",
+				"name": "alma-linux-10-1",
+				"description": "AlmaLinux OS 10.1"
 			}
 		]
 	},
@@ -623,6 +687,16 @@
 				"description": "Rocky 9.6 with LVM"
 			},
 			{
+				"filter": "Rocky-9-EC2-Base-9.7",
+				"name": "rocky-linux-9-7",
+				"description": "Rocky 9.7"
+			},
+			{
+				"filter": "Rocky-9-EC2-LVM-9.7",
+				"name": "rocky-linux-9-7-lvm",
+				"description": "Rocky 9.7 with LVM"
+			},
+			{
 				"filter": "Rocky-10-EC2-Base-10.0",
 				"name": "rocky-linux-10-0",
 				"description": "Rocky 10.0"
@@ -631,6 +705,16 @@
 				"filter": "Rocky-10-EC2-LVM-10.0",
 				"name": "rocky-linux-10-0-lvm",
 				"description": "Rocky 10.0 with LVM"
+			},
+			{
+				"filter": "Rocky-10-EC2-Base-10.1",
+				"name": "rocky-linux-10-1",
+				"description": "Rocky 10.1"
+			},
+			{
+				"filter": "Rocky-10-EC2-LVM-10.1",
+				"name": "rocky-linux-10-1-lvm",
+				"description": "Rocky 10.1 with LVM"
 			}
 		]
 	},
