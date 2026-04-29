@@ -433,6 +433,11 @@
 				"filter": "amzn-ec2-macos-15",
 				"name": "macos-15",
 				"description": "Apple macOS 15 (Sequoia)"
+			},
+			{
+				"filter": "amzn-ec2-macos-26",
+				"name": "macos-26",
+				"description": "Apple macOS 26 (Tahoe)"
 			}
 		]
 	},
