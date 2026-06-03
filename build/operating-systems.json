@@ -191,34 +191,9 @@
 		"description": "Fedora",
 		"versions": [
 			{
-				"filter": "CentOS Stream 8",
-				"name": "centos-stream-8",
-				"description": "CentOS Stream 8"
-			},
-			{
 				"filter": "CentOS Stream 9",
 				"name": "centos-stream-9",
 				"description": "CentOS Stream 9"
-			},
-			{
-				"filter": "Fedora-Cloud-Base-39",
-				"name": "fedora-39",
-				"description": "Fedora 39"
-			},
-			{
-				"filter": "fedora-coreos-39",
-				"name": "coreos-39",
-				"description": "Fedora CoreOS 39"
-			},
-			{
-				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-40",
-				"name": "fedora-40",
-				"description": "Fedora 40"
-			},
-			{
-				"filter": "fedora-coreos-40",
-				"name": "coreos-40",
-				"description": "Fedora CoreOS 40"
 			},
 			{
 				"filter": "Fedora-Cloud-Base-AmazonEC2\\.[a-z0-9_]*-41",
@@ -352,26 +327,6 @@
 		"description": "Red Hat Enterprise Linux",
 		"versions": [
 			{
-				"filter": "RHEL-7.9",
-				"name": "rhel-7-9",
-				"description": "RHEL 7.9"
-			},
-			{
-				"filter": "RHEL_HA-7.9",
-				"name": "rhel-7-9-ha",
-				"description": "RHEL 7.9 with HA"
-			},
-			{
-				"filter": "RHEL-8.9",
-				"name": "rhel-8-9",
-				"description": "RHEL 8.9"
-			},
-			{
-				"filter": "RHEL_HA-8.9",
-				"name": "rhel-8-9-ha",
-				"description": "RHEL 8.9 with HA"
-			},
-			{
 				"filter": "RHEL-8.10",
 				"name": "rhel-8-10",
 				"description": "RHEL 8.10"
@@ -380,36 +335,6 @@
 				"filter": "RHEL_HA-8.10",
 				"name": "rhel-8-10-ha",
 				"description": "RHEL 8.10 with HA"
-			},
-			{
-				"filter": "RHEL-9.2",
-				"name": "rhel-9-2",
-				"description": "RHEL 9.1"
-			},
-			{
-				"filter": "RHEL_HA-9.2",
-				"name": "rhel-9-2-ha",
-				"description": "RHEL 9.2 with HA"
-			},
-			{
-				"filter": "RHEL-9.3",
-				"name": "rhel-9-3",
-				"description": "RHEL 9.3"
-			},
-			{
-				"filter": "RHEL_HA-9.3",
-				"name": "rhel-9-3-ha",
-				"description": "RHEL 9.3 with HA"
-			},
-			{
-				"filter": "RHEL-9.4",
-				"name": "rhel-9-4",
-				"description": "RHEL 9.4"
-			},
-			{
-				"filter": "RHEL_HA-9.4",
-				"name": "rhel-9-4-ha",
-				"description": "RHEL 9.4 with HA"
 			},
 			{
 				"filter": "RHEL-9.5",
@@ -518,29 +443,9 @@
 		"description": "AlmaLinux",
 		"versions": [
 			{
-				"filter": "AlmaLinux OS 8.9",
-				"name": "alma-linux-8-9",
-				"description": "AlmaLinux OS 8.9"
-			},
-			{
 				"filter": "AlmaLinux OS 8.10",
 				"name": "alma-linux-8-10",
 				"description": "AlmaLinux OS 8.10"
-			},
-			{
-				"filter": "AlmaLinux OS 9.2",
-				"name": "alma-linux-9-2",
-				"description": "AlmaLinux OS 9.2"
-			},
-			{
-				"filter": "AlmaLinux OS 9.3",
-				"name": "alma-linux-9-3",
-				"description": "AlmaLinux OS 9.3"
-			},
-			{
-				"filter": "AlmaLinux OS 9.4",
-				"name": "alma-linux-9-4",
-				"description": "AlmaLinux OS 9.4"
 			},
 			{
 				"filter": "AlmaLinux OS 9.5",
@@ -575,16 +480,6 @@
 		"description": "FreeBSD",
 		"versions": [
 			{
-				"filter": "FreeBSD 13.1-STABLE",
-				"name": "freebsd-13-1",
-				"description": "FreeBSD 13.1"
-			},
-			{
-				"filter": "FreeBSD 13.2-STABLE",
-				"name": "freebsd-13-2",
-				"description": "FreeBSD 13.2"
-			},
-			{
 				"filter": "FreeBSD 13.3-STABLE",
 				"name": "freebsd-13-5",
 				"description": "FreeBSD 13.5"
@@ -616,56 +511,6 @@
 		"name": "rocky-linux",
 		"description": "Rocky Linux",
 		"versions": [
-			{
-				"filter": "Rocky-8-EC2-Base-8.9",
-				"name": "rocky-linux-8-9",
-				"description": "Rocky 8.9"
-			},
-			{
-				"filter": "Rocky-8-EC2-LVM-8.9",
-				"name": "rocky-linux-8-9-lvm",
-				"description": "Rocky 8.9 with LVM"
-			},
-			{
-				"filter": "Rocky-8-EC2-Base-8.10",
-				"name": "rocky-linux-8-10",
-				"description": "Rocky 8.10"
-			},
-			{
-				"filter": "Rocky-8-EC2-LVM-8.10",
-				"name": "rocky-linux-8-10-lvm",
-				"description": "Rocky 8.10 with LVM"
-			},
-			{
-				"filter": "Rocky-9-EC2-Base-9.2",
-				"name": "rocky-linux-9-2",
-				"description": "Rocky 9.2"
-			},
-			{
-				"filter": "Rocky-9-EC2-LVM-9.2",
-				"name": "rocky-linux-9-2-lvm",
-				"description": "Rocky 9.2 with LVM"
-			},
-			{
-				"filter": "Rocky-9-EC2-Base-9.3",
-				"name": "rocky-linux-9-3",
-				"description": "Rocky 9.3"
-			},
-			{
-				"filter": "Rocky-9-EC2-LVM-9.3",
-				"name": "rocky-linux-9-3-lvm",
-				"description": "Rocky 9.3 with LVM"
-			},
-			{
-				"filter": "Rocky-9-EC2-Base-9.4",
-				"name": "rocky-linux-9-4",
-				"description": "Rocky 9.4"
-			},
-			{
-				"filter": "Rocky-9-EC2-LVM-9.4",
-				"name": "rocky-linux-9-4-lvm",
-				"description": "Rocky 9.4 with LVM"
-			},
 			{
 				"filter": "Rocky-9-EC2-Base-9.5",
 				"name": "rocky-linux-9-5",
